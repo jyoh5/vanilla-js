@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>My dairy</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="header__user">
+          <div id="user">Somebody's</div>
+          <div>DAILY PLAN</div>
+        </div>
+        <div class="header__info">
+          <div class="header__wise-saying js-wise-saying">
+            “I never dreamed about success, I worked for it.” - Estee Lauder -
+          </div>
+          <div class="header__date-info js-clock">
+            <div class="header__date js-date"></div>
+            <div class="header__time js-time"></div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="main__time-table">
+          <h3>Time Table</h3>
+          <ul class="js-pending-time">
+            <li>
+              <span>9</span><span class="pt0"></span><span class="pt1"></span
+              ><span class="pt2"></span><span class="pt3"></span
+              ><span class="pt4"></span><span class="pt5"></span>
+            </li>
+            <li>
+              <span>10</span><span class="pt6"></span><span class="pt7"></span
+              ><span class="pt8"></span><span class="pt9"></span
+              ><span class="pt10"></span><span class="pt11"></span>
+            </li>
+            <li>
+              <span>11</span><span class="pt12"></span><span class="pt13"></span
+              ><span class="pt14"></span><span class="pt15"></span
+              ><span class="pt16"></span><span class="pt17"></span>
+            </li>
+            <li>
+              <span>12</span><span class="pt18"></span><span class="pt19"></span
+              ><span class="pt20"></span><span class="pt21"></span
+              ><span class="pt22"></span><span class="pt23"></span>
+            </li>
+            <li>
+              <span>1</span><span class="pt24"></span><span class="pt25"></span
+              ><span class="pt26"></span><span class="pt27"></span
+              ><span class="pt28"></span><span class="pt29"></span>
+            </li>
+            <li>
+              <span>2</span><span class="pt30"></span><span class="pt31"></span
+              ><span class="pt32"></span><span class="pt33"></span
+              ><span class="pt34"></span><span class="pt35"></span>
+            </li>
+            <li>
+              <span>3</span><span class="pt36"></span><span class="pt37"></span
+              ><span class="pt38"></span><span class="pt39"></span
+              ><span class="pt40"></span><span class="pt41"></span>
+            </li>
+            <li>
+              <span>4</span><span class="pt42"></span><span class="pt43"></span
+              ><span class="pt44"></span><span class="pt45"></span
+              ><span class="pt46"></span><span class="pt47"></span>
+            </li>
+            <li>
+              <span>5</span><span class="pt48"></span><span class="pt49"></span
+              ><span class="pt50"></span><span class="pt51"></span
+              ><span class="pt52"></span><span class="pt53"></span>
+            </li>
+            <li>
+              <span>6</span><span class="pt54"></span><span class="pt55"></span
+              ><span class="pt56"></span><span class="pt57"></span
+              ><span class="pt58"></span><span class="pt59"></span>
+            </li>
+            <li>
+              <span>7</span><span class="pt60"></span><span class="pt61"></span
+              ><span class="pt62"></span><span class="pt63"></span
+              ><span class="pt64"></span><span class="pt65"></span>
+            </li>
+            <li>
+              <span>8</span><span class="pt66"></span><span class="pt67"></span
+              ><span class="pt68"></span><span class="pt69"></span
+              ><span class="pt70"></span><span class="pt71"></span>
+            </li>
+            <li>
+              <span>9</span><span class="pt72"></span><span class="pt73"></span
+              ><span class="pt74"></span><span class="pt75"></span
+              ><span class="pt76"></span><span class="pt77"></span>
+            </li>
+            <li>
+              <span>10</span><span class="pt78"></span><span class="pt79"></span
+              ><span class="pt80"></span><span class="pt81"></span
+              ><span class="pt82"></span><span class="pt83"></span>
+            </li>
+            <li>
+              <span>11</span><span class="pt84"></span><span class="pt85"></span
+              ><span class="pt86"></span><span class="pt87"></span
+              ><span class="pt88"></span><span class="pt89"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="main__schedule">
+          <h3>schedule<i class="fas fa-plus-circle"></i></h3>
+          <ul class="js-pending">
+            <li id="pending9"></li>
+            <li id="pending10"></li>
+            <li id="pending11"></li>
+            <li id="pending12"></li>
+            <li id="pending13"></li>
+            <li id="pending14"></li>
+            <li id="pending15"></li>
+            <li id="pending16"></li>
+            <li id="pending17"></li>
+            <li id="pending18"></li>
+            <li id="pending19"></li>
+            <li id="pending20"></li>
+            <li id="pending21"></li>
+            <li id="pending22"></li>
+            <li id="pending23"></li>
+          </ul>
+        </div>
+      </main>
+      <div class="add js-add showing">
+        <form>
+          <div class="add__time js-add-time">
+            <h3>Time</h3>
+            <select class="js-start-hours">
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">1</option>
+              <option value="14">2</option>
+              <option value="15">3</option>
+              <option value="16">4</option>
+              <option value="17">5</option>
+              <option value="18">6</option>
+              <option value="19">7</option>
+              <option value="20">8</option>
+              <option value="21">9</option>
+              <option value="22">10</option>
+              <option value="23">11</option>
+            </select>
+            :
+            <select class="js-start-minutes">
+              <option value="0">0</option>
+              <option value="1">10</option>
+              <option value="2">20</option>
+              <option value="3">30</option>
+              <option value="4">40</option>
+              <option value="5">50</option>
+            </select>
+            &nbsp~&nbsp
+            <select class="js-end-hours">
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">1</option>
+              <option value="14">2</option>
+              <option value="15">3</option>
+              <option value="16">4</option>
+              <option value="17">5</option>
+              <option value="18">6</option>
+              <option value="19">7</option>
+              <option value="20">8</option>
+              <option value="21">9</option>
+              <option value="22">10</option>
+              <option value="23">11</option>
+            </select>
+            :
+            <select class="js-end-minutes">
+              <option value="0">0</option>
+              <option value="1">10</option>
+              <option value="2">20</option>
+              <option value="3">30</option>
+              <option value="4">40</option>
+              <option value="5">50</option>
+            </select>
+          </div>
+          <div class="add__scehdule">
+            <h3>Schedule</h3>
+            <input type="text" placeholder="Add your schedule" />
+          </div>
+        </form>
+      </div>
+      <div class="weather js-weather">
+        <div>
+          <i class="fas fa-cloud-sun"></i>
+          <div class="js-weather-temp"></div>
+        </div>
+        <div>
+          <div class="js-weather-min"></div>
+          <div class="js-weather-max"></div>
+        </div>
+        <div class="js-weather-place"></div>
+      </div>
+    </div>
+    <div class="greetings js-greetings">
+      <form>
+        <input type="text" placeholder="What is your name?" />
+      </form>
+    </div>
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/bg.js"></script>
+    <script src="./js/weather.js"></script>
+    <script src="./js/greetings.js"></script>
+    <script src="./js/todo.js"></script>
+    <!-- <div class="recode">
+      <header>
+        <h2>Your recode</h2>
+        <h4>3 month ago</h4>
+      </header>
+      <main>
+        <img src="./img/1.jpg" />
+        <div class="recode__date">2020. 10. 24. WED</div>
+        <div class="recode__text">
+          <p>OMG... Look at HER!!!!!!!</p>
+          <p>I Love Cat!!!!!!!!!</p>
+        </div>
+      </main>
+    </div>
+    <div class="today">
+      <header>
+        <h2>Jan 24 2021</h2>
+        <h4>Today</h4>
+      </header>
+      <main>
+        <div class="today__text">
+          <p>I was really wet because I didn't bring my umbrella.</p>
+          <p>(Daejeon's weather: -7c 🥶)</p>
+          <p>Anyway, I have a lot to do today.</p>
+        </div>
+        <div class="today__clock js-clock">
+          <div class="today__time">00:00</div>
+          <div class="today__time-info">
+            <div class="today__time-slot">AM</div>
+            <div class="today__time-second">00</div>
+          </div>
+        </div>
+        <div>
+          <form class="today__tasks js-tasks">
+            <span>Tasks</span>
+            <input type="text" placeholder="Add task" />
+          </form>
+          <ul class="today__pending">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>to do list</span>
+              <i class="fas fa-trash-alt"></i>
+            </li>
+            <li>
+              <i class="far fa-circle"></i>
+              <span>Bring an umbrella</span>
+              <i class="fas fa-trash-alt"></i>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div> -->
+  </body>
+</html>

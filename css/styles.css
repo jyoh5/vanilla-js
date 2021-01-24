@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Gaegu&family=Jua&display=swap");
+@import "variables.css";
+
+* {
+  box-sizing: border-box;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+body {
+  background-image: url("../img/1.png");
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1500px;
+  height: 100%;
+  margin: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+header {
+  width: 1000px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.header__user {
+  width: 200px;
+  height: 120px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.header__info {
+  width: 100%;
+}
+.header__info > div {
+  width: 100%;
+  height: 60px;
+  border-bottom: 3px solid var(--orange);
+}
+.header__wise-saying {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0px 30px 10px 0px;
+  color: var(--orange);
+  font-family: "Jua", sans-serif;
+  font-size: 18px;
+}
+.header__date-info {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+main {
+  display: flex;
+}
+
+.main__time-table {
+  width: 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul > li {
+  display: flex;
+}
+ul > li > span {
+  width: 50px;
+  height: 35px;
+  border: 1px solid var(--orange);
+  text-align: center;
+  line-height: 30px;
+}
+ul > li > span.on {
+  background-color: var(--orange);
+}
+ul > li > span.fin {
+  background-color: grey;
+}
+ul > li:first-child > span {
+  border-top: 2px solid var(--orange);
+}
+ul > li:last-child > span {
+  border-bottom: 2px solid var(--orange);
+}
+ul > li > span:first-child {
+  border-left: none;
+}
+ul > li > span:last-child {
+  border-right: none;
+}
+
+.main__schedule {
+  width: 600px;
+}
+.main__schedule > h3 {
+  text-align: end;
+}
+.main__schedule > h3 > i {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.main__schedule > ul > li {
+  width: 100%;
+  border: 1px solid var(--orange);
+  border-left: none;
+  border-right: none;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+.main__schedule > ul > li:first-child {
+  border-top: 2px solid var(--orange);
+}
+.main__schedule > ul > li:last-child {
+  border-bottom: 2px solid var(--orange);
+}
+.main__schedule > ul > li span {
+  font-family: "Gaegu", cursive;
+  font-size: 24px;
+  margin-left: 20px;
+}
+.main__schedule > ul > li span del {
+  font-family: "Gaegu", cursive;
+}
+.main__schedule > ul > li i {
+  cursor: pointer;
+}
+
+.add {
+  width: 1000px;
+  margin: 30px 0px;
+  display: none;
+}
+.add > form {
+  display: flex;
+}
+.add h3 {
+  margin: 0 10px 0 0;
+}
+.add__time {
+  width: 400px;
+  display: flex;
+}
+.add__time select {
+  width: 65px;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+.add__time select:focus {
+  border-bottom: 2px solid var(--orange);
+  outline: none;
+}
+.add__scehdule {
+  width: 600px;
+  display: flex;
+}
+.add__scehdule > input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid grey;
+}
+.add__scehdule > input:focus {
+  border-bottom: 2px solid var(--orange);
+  outline: none;
+}
+
+.weather {
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.weather > div:nth-child(1) {
+  display: flex;
+  font-size: 20px;
+}
+.weather > div:nth-child(1) i {
+  margin-right: 10px;
+}
+.greetings {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.greetings input {
+  width: 500px;
+  height: 100px;
+  background-color: var(--orange);
+  border-radius: 15px;
+  border: none;
+  font-size: 30px;
+  padding: 0px 10px;
+}
+.greetings input:focus {
+  outline: none;
+}
+
+.showing {
+  display: flex;
+}
+/* @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Nanum+Pen+Script&display=swap");
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Do Hyeon", sans-serif;
+}
+.recode,
+.today {
+  width: 550px;
+  height: 800px;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 10px 10px 15px grey;
+  padding: 0px 30px;
+  box-sizing: border-box;
+}
+.recode {
+  box-shadow: -10px 10px 15px grey;
+}
+
+header,
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+}
+h2,
+h4 {
+  margin: 0;
+  font-family: "Fraunces", serif;
+}
+
+header {
+  margin: 40px 0px 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid grey;
+}
+.recode img {
+  width: 450px;
+  height: auto;
+  margin-bottom: 40px;
+}
+.recode__date {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+.recode__text {
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 30px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+p {
+  margin: 0;
+}
+.recode__text > p:nth-child(2) {
+  font-size: 60px;
+}
+
+.today__text {
+  font-family: "Nanum Pen Script", cursive;
+  margin: 0px 0px 20px;
+}
+.today__clock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.today__time {
+  font-size: 80px;
+  margin-right: 10px;
+}
+.today__time-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 24px;
+}
+.today__tasks {
+  text-align: center;
+}
+ul {
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+li span {
+  display: inline-block;
+  width: 250px;
+} */
