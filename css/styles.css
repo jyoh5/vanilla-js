@@ -88,10 +88,10 @@ ul > li > span {
   line-height: 30px;
 }
 ul > li > span.on {
-  background-color: var(--orange);
+  background-color: var(--yellow);
 }
 ul > li > span.fin {
-  background-color: grey;
+  background-color: var(--orange);
 }
 ul > li:first-child > span {
   border-top: 2px solid var(--orange);
