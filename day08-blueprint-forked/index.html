@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="./src/styles.css" /> -->
+  </head>
+  <body>
+    <div>
+      <header>
+        <h2>Random Number Game</h1>
+      </header>
+      <main>
+        <div class="range-setting">
+          <div>Choose a number.</div>
+          <div>
+        <input
+            class="range-setting__range-slider"
+            type="range"
+            list="tickmarks"
+            min="0"
+            max="200"
+            step="5"
+            value="100"
+          />
+          <datalist id="tickmarks">
+            <option value="50"></option>
+            <option value="100"></option>
+            <option value="150"></option>
+          </datalist>
+          <span class="num-setting__range-text">100</span>
+        </div>
+        </div>
+        <div class="num-setting">
+          <div>
+            <span></span>Enter a number between 0 ~ </span>
+            <span class="num-setting__range-text">100</span>.
+          </div>
+          <div>And press the button.</div>
+          <form class="num-setting__form">
+            <input class="num-setting__user-input" type="number" />
+            <input type="submit" value="Play!" />
+          </form>
+        </div>
+        <div class="result-container">
+          <div>The answer is</div>
+          <div class="result-container__answer"></div>
+          <div class="result-container__result">
+            <div class="result-container__success">
+              <span>Congratulations!</span>
+              <i class="far fa-smile-wink"></i>
+            </div>
+            <div class="result-container__fail">
+              <span>Try again...</span>
+              <i class="far fa-frown-open"></i>
+            </div>
+        </div>
+        </div>
+      </main>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

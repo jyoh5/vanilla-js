@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+body {
+  font-family: sans-serif;
+}
+body > div {
+  width: 400px;
+  height: 670px;
+  border: 1px solid #e8eae6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+header {
+  background-color: #7c9473;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 15px;
+  margin-bottom: 40px;
+}
+header h2 {
+  font-size: 30px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+@keyframes moving {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+main {
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 20px;
+}
+main > div {
+  width: 100%;
+  border: 1px solid #e8eae6;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 3px #e8eae6;
+  animation: moving 0.5s ease-in-out;
+}
+main > div:hover {
+  background-color: #e8eae6;
+}
+
+.range-setting__range-slider,
+.num-setting__user-input {
+  width: 200px;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #495464;
+}
+.num-setting__form input:last-child {
+  font-family: "Yusei Magic", sans-serif;
+  height: 30px;
+  background-color: #cdd0cb;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #495464;
+  outline: none;
+}
+.num-setting__form input:last-child:active {
+  box-shadow: inset 1px 1px 1px #495464;
+}
+
+.result-container {
+  visibility: hidden;
+}
+.result-container__answer {
+  font-size: 80px;
+}
+.result-container__result > div {
+  display: none;
+}
+.result-container__result > .on {
+  display: block;
+}
